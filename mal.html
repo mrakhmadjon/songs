@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>digonal nav</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+
+html, body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.7;
+  perspective-origin: 0% 50%;
+  perspective: 800px;
+  background: #21212d;
+
+}
+nav, main {
+  transition: transform 150ms ease-out;
+}
+nav {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 16em;
+  background-color: #353441;
+  transform: translateX(-16em);
+}
+nav.menu-active {
+  transform: translateX(0);
+}
+nav.menu-hover {
+  transform: translateX(-15em);
+}
+nav h1 {
+  z-index: 100;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -65px;
+  height: 60px;
+  width: 65px;
+  line-height: 60px;
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #353441;
+  cursor: pointer;
+}
+nav h1:hover {
+  color: #353441;
+  background: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  padding: 0 1em;
+  width: 100%;
+  height: 60px;
+  color: #9dc6d1;
+  line-height: 60px;
+  background-color: #353441;
+    transition: all 0.5s ease-in;
+}
+nav li:nth-of-type(2n) {
+  background-color: #3a3947;
+}
+nav li:hover {
+  background: ORANGERED;
+    color: white;
+
+}
+main {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://images.pexels.com/photos/3987613/pexels-photo-3987613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  transform-origin: 0% 50%;
+    background-size: auto;
+}
+main:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to right, transparent, rgba(33, 33, 45, .5));
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 150ms ease-out, visibility 0s 150ms;
+}
+main.menu-active {
+  border-radius: 0.001px;
+  transform: translateX(16em) rotateY(15deg);
+}
+main.menu-active:after {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 150ms ease-out, visibility 0s;
+}
+main.menu-hover {
+  border-radius: 0.001px;
+  transform: translateX(1em) rotateY(1deg);
+}
+main section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 1em 4em;
+  max-width: 680px;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, .5);
+}
+section h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+section p {
+  display: inline-block;
+  margin: 16px 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1>QO'SHIQ</h1>
+  <ul>
+    <li><a href="index.html">ISHONTIR</a></li>
+    <li><a href="rybak.html">FIRST KISS</a></li>
+    <li><a href="mal.html">Малиновый закат</a></li>
+    <li>DALER</li>
+    <li>IZLAYMAN</li>
+    <
+  </ul>
+</nav>
+<main>
+  <section>
+   <br><br><br>
+  <h1>Малиновый закат</h1>
+    <br>
+    <h5>Мысли ласкает живот, порождаем мечты <br>
+И фон горящих окон, себя открыла мне ты<br>
+Нежно-яркий цветок, нетронутый, как дитя<br>
+Наивная на любовь, солнечная вся<br>
+<br>
+И в этой комнате огонь (Светом обнажённый)<br>
+В облаке постель (Накрывает волны)<br>
+Посмотри назад, за тобою дверь<br>
+Так будет лучше нам, поверь<br>
+<br>
+Малиновый закат стекает по стене<br>
+В тех ломаных лучах<br>
+Я насквозь и вокруг тебя рассмотрел<br>
+Только ты ничего не знала обо мне<br>
+<br>
+Малиновый закат, во-о-у, рисует на земле, е-е<br>
+Наивно не пытайся достать, что давно осело на дне<br>
+Если ты ничего не знала обо мне<br>
+<br>
+Двери хлопай, беги, не оглядывайся назад<br>
+Я уверен, найдёшь себе ты достойного паренька<br>
+Со мной не будет любви, со мной погубишь себя<br>
+Но дверь закрыла не с той стороны - и это было зря<br>
+<br>
+И снова в комнате огонь (Светом обнаженный)<br>
+Греют облака (Будет все по новой)<br>
+Наступает ночь, и остановиться на ней<br>
+Будет лучше нам, поверь<br>
+<br>
+Малиновый закат стекает по стене<br>
+В тех ломаных лучах<br>
+Я насквозь и вокруг тебя рассмотрел<br>
+Только ты ничего не знала обо мне<br>
+<br>
+Малиновый закат, во-о-у, рисует на земле, е-е<br>
+Наивно не пытайся достать, что давно осело на дне<br>
+Если ты ничего не знаешь обо мне (Не знаешь обо мне)<br>
+<br>
+</h5>
+<br>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="mal.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </section>
+</main>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover(
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+
+</script>
+</body>
+</html>
